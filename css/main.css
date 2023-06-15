@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+.line__big, .line__litl {
+  display: inline-block;
+  width: 10px;
+  height: 3px;
+  text-align: center;
+  margin: 0 auto;
+  background: #FFCC00;
+  border: 1px solid #FFCC00;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 121px;
+}
+
+.head {
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.head__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  font-style: normal;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  color: #898F8F;
+}
+
+.head__title {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 66px;
+  text-align: center;
+  font-style: normal;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #FFCC00;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.head__title::after, .head__title::before {
+  content: "";
+  position: absolute;
+  bottom: -9%;
+  width: 210px;
+  height: 2px;
+  background-color: #FFCC00;
+}
+
+.head__title::after {
+  left: 52%;
+}
+
+.head__title::before {
+  left: 29%;
+}
+
+.head__img {
+  display: inline-block;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 170px;
+  margin: 0 70px;
+  max-width: 1170px;
+  align-items: center;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #FFCC00;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  z-index: 1;
+  bottom: 50%;
+  left: 23%;
+  width: 560px;
+  height: 0px;
+}
+
+.left {
+  position: relative;
+  width: 430px;
+  height: 430px;
+  margin: 65px 0;
+}
+
+.left__photo {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 3;
+}
+
+.left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 430px;
+  height: 430px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: 1px solid #fff;
+  z-index: 2;
+}
+
+.left::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  top: 0;
+  left: 0%;
+  width: 430px;
+  height: 430px;
+  background-color: rgba(255, 204, 0, 0);
+  border: 1px solid #FFCC00;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.right {
+  width: 430px;
+  margin: 70px 0 70px 0;
+}
+
+.right__name {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
+  text-align: center;
+  font-style: normal;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  color: #666666;
+  margin: 0 0 60px 0;
+}
+
+.right__name::before {
+  content: "";
+  position: absolute;
+  bottom: -60%;
+  left: 37%;
+  width: 100px;
+  border: 1px solid #FFCC00;
+}
+
+.right__profession {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  font-style: normal;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  color: #666666;
+  margin: 0 0 30px 0;
+}
+
+.right__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  font-style: normal;
+  font-family: "Raleway", sans-serif;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.line {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.line__big {
+  width: 20px;
+}
+
+.block {
+  margin-bottom: 49px;
+}
+
+.social {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  justify-content: center;
+}
+
+.bmt {
+  width: 118px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.bmt__right {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #666666;
+  width: 118px;
+  height: 24px;
+  border: 1px solid #FFCC00;
+}
